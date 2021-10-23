@@ -2,6 +2,7 @@ import pywinauto
 from pywinauto import application
 import time
 import cv2
+import json
 
 from audacity_pipe import *
 
@@ -9,8 +10,10 @@ from audacity_pipe import *
 # TODO move the window to look appealing
 # app["Audacity"].move_window(0, 0, 400, 400)
 def start():    
+    file = open("vidacity_settings.json","r")
+    settings = json.load(file)
     app = application.Application(backend="uia")
-    audacity_path = "C:\\Program Files (x86)\\Audacity\\audacity.exe"
+    audacity_path = settings["audacity_path"]
     app.start(audacity_path)
     app.connect(path=audacity_path)
     Audacity = app['Audacity']
