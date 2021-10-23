@@ -1,0 +1,120 @@
+/*------------------------------------------------------------------
+[Color codes]
+Buttons, etc:	#726FB9 (blue)
+hover color:	#fed136 (yellow)
+-------------------------------------------------------------------*/
+/* main font for menu. */
+@import url(https://fonts.googleapis.com/css?family=Lora:400|Raleway:100,200,300,400,500,700,800);
+/*- General -*/
+body {
+	background-image: url("../images/back.jpg");
+	background-size:100%;
+    font-family: "Raleway", Sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	letter-spacing: -0.04em;
+	font-weight: 700;
+	font-style: normal;
+	font-family: "Raleway", Sans-serif;
+	color: black/*#4A4A4A*/;
+}
+p {
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #000;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+a {
+    color: black/*#4A4A4A*/;	
+}
+a:hover, a:focus, a:active, a.active {
+	color: black/*#1db954*/;
+}
+a, a:hover, a:focus, a:active, a.active {
+	outline: 0;
+	text-decoration: none;
+}
+::selection {
+	text-shadow: none;    
+	background: black/*#fed136*/;
+}
+
+/*- Reset bootstrap - Keep page shape -*/
+@media (min-width: 1200px)
+.container {
+	width: 1260px;
+}
+.row-gutter {
+	margin-left: -20px;
+	margin-right: -20px;
+}
+.col-gutter {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.sidebar-gutter {
+	padding-left: 50px;	
+
+}
+header {
+	margin: 25px 0 35px;
+}
+
+.widget-socials {
+}
+.widget-socials a {
+	margin: 3px 8px;
+	padding: 5px;
+	font-size: 17px;
+	color: black/*#3C3C3C*/;
+}
+
+.section-title {
+	margin: 0 0 45px 0;
+	border-top: 1px solid black/*#505050*/;
+	font-size: 28px;
+	padding-top: 10px;
+	font-weight: 300;
+	color: black/*#272727*/;
+}
+.section-title span {
+}
+/*- Footer -*/
+footer {
+	padding-left: 130px;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: black/*#717171*/;
+}
+
+/*footer .footer-socials a:hover {
+	background-color: #3b5998;
+}*/
+footer .footer-bottom {
+	padding: 10px 0 40px;
+}
+
+
+.salepage{
+	margin-left: 100px;
+
+}
+
+@media only screen and (max-width: 768px) {
+	.salepage {
+	  margin-left: 25px;
+	}
+  }
