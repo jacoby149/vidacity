@@ -62,6 +62,8 @@ def sync_play(title
         s = parsetime(secs.window_text())
         cap.set(0, s)
         ret, frame = cap.read()
+        height, width, channels = frame.shape 
+        frame = cv2.resize(frame, (width//2, height//2))
         cv2.imshow('frame', frame)
         if cv2.waitKey(30) & 0xFF == ord('q'):
             break
